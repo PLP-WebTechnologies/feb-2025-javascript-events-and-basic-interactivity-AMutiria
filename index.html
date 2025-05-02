@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interactive Playground</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Interactive Playground!</h1>
+    </header>
+
+    <section id="event-handling">
+        <h2>Event Handling Fun</h2>
+        <button id="clickButton">Click Me!</button>
+        <div id="hoverArea">Hover Over Me</div>
+        <input type="text" id="keypressInput" placeholder="Type Something">
+        <p id="keypressOutput"></p>
+        <button id="doubleClickButton">Double Click Me for a Secret!</button>
+        <button id="longPressButton">Long Press Me!</button>
+        <p id="longPressMessage" class="hidden">That was a long press!</p>
+    </section>
+
+    <section id="interactive-elements">
+        <h2>Interactive Elements Galore</h2>
+        <button id="changeTextButton">Change My Text</button>
+        <div id="imageGallery">
+            <img src="https://via.placeholder.com/150/FFC0CB/000000?Text=Image+1" alt="Image 1" class="active">
+            <img src="https://via.placeholder.com/150/ADD8E6/000000?Text=Image+2" alt="Image 2">
+            <img src="https://via.placeholder.com/150/90EE90/000000?Text=Image+3" alt="Image 3">
+            <button id="prevImage">Previous</button>
+            <button id="nextImage">Next</button>
+        </div>
+
+        <div class="tabs">
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="tab1">Tab 1</button>
+                <button class="tab-button" data-tab="tab2">Tab 2</button>
+                <button class="tab-button" data-tab="tab3">Tab 3</button>
+            </div>
+            <div class="tab-content active" id="tab1">Content for Tab 1</div>
+            <div class="tab-content" id="tab2">Content for Tab 2</div>
+            <div class="tab-content" id="tab3">Content for Tab 3</div>
+        </div>
+    </section>
+
+    <section id="form-validation">
+        <h2>Form Validation Challenge</h2>
+        <form id="myForm">
+            <div>
+                <label for="name">Name (required):</label>
+                <input type="text" id="name" required>
+                <p class="error-message" id="nameError"></p>
+            </div>
+            <div>
+                <label for="email">Email (required):</label>
+                <input type="email" id="email" required>
+                <p class="error-message" id="emailError"></p>
+            </div>
+            <div>
+                <label for="password">Password (min 8 characters):</label>
+                <input type="password" id="password" required>
+                <p class="error-message" id="passwordError"></p>
+            </div>
+            <button type="submit">Submit</button>
+            <p id="formMessage"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Interactive Playground</p>
+    </footer>
+
+    <script  src="script.js"></script>
+</body>
+</html>
